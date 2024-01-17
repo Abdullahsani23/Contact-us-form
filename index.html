@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+            background-color: #0f0f0f;
+        }
+        h1{
+            text-align: center;
+            color: #959595;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .one{
+            margin: 15px 0;
+        }
+label{
+    font-size: 15px;
+    color: #959595;
+    font-weight: 400;
+    margin-right: 2px;
+    
+}
+label:hover{
+    color:aliceblue
+
+}
+.box{
+    width: 300px;
+    background-color: #0f0f0f;
+    outline:none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #959595;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 5px;
+    color: #959595;
+
+}
+.box:focus{
+    border-bottom: 2px solid white;
+}
+
+.button{
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0f0f0f;
+    background-color:#959595 ;
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px ;
+}
+.button:hover{
+    color: #959595;
+    background-color: #0f0f0f;
+    border: 2px solid aliceblue;
+}
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1>Contact Us</h1>
+        <form>
+            <div class="one">
+            <label for="fname">First Name</label>
+            <br>
+            <input class="box" type="text" id="fname" name="firstname" placeholder="Your name">
+        </div>
+        <div class="one">
+            <label for="lname">Last Name</label>
+             <br>
+            <input class="box" type="text" id="lname" name="lastname" placeholder="Your Last Name">
+        </div>
+        <div class="one">
+            <label for="email">Email</label>
+            <br>
+            <input class="box" type="email" id="email" placeholder="Write Email Address">
+        </div>
+        <div class="one">
+            <label for="password">Pasword</label>
+            <br>
+            <input class="box" type="password" id="password" placeholder="password">
+        </div>
+        <div class="one">
+            <label for="Number">Number</label>
+            <br>
+            <input class="box" type="number" id="Number" placeholder="Cell Number">
+        </div>
+        <div class="one">
+            <label for="feecback">Feedback</label>
+            <br><br><br>
+            <input class="box" type="text" id="feecback" placeholder="Write your Feedback">
+        </div>
+        
+        <table>
+            <tr>
+            <td><input class="button" type="submit" name="submit"></td>
+            <br><br>
+            <td><input class="button" type="reset" name="reset"></td>
+        </tr>
+        </table>
+        </form>
+
+
+    </div>
+
+</body>
+</html>
